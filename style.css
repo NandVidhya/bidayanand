@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    background: rgba(0, 0, 0, 0.7) url('images/technical.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+::selection{
+    background-color: rgb(1, 94, 43);
+    color:#ffff;
+}
+.handle{
+    font-size: 35px;
+}
+.logo{
+    color:#d5d5d5;
+    font-size:35px;
+    font-weight: bold;
+    line-height:80px;
+    padding: 0 100px;
+
+}
+nav{
+    background: #00000087;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    transition: all 0.6s ease;
+}
+nav ul{
+    float:right;
+    margin-right:40px;
+}
+nav li{
+    display:inline-block;
+    margin: 0px 8px;
+    line-height: 80px;
+}
+nav a {
+    color: #e6e6e6;
+    padding: 20px 12px 20px 12px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+a:hover{
+    border: 2px solid rgb(158, 155, 155);
+    border-radius: 10px;
+    color:rgb(143, 245, 152);
+   
+}
+.login{
+    padding: 10px;
+    font-size: 15px;
+}
+.login:hover{
+
+        border: 2px solid transparent;
+        border-radius: 0px;
+        color:none;
+}
+/*Resume-img-css*/
+.section1{
+    margin:20px;
+    padding:20px;
+    text-align: center;
+    align-items: center;
+}
+.resume{
+    height: 1115px;
+    width: 782px;
+    padding: 20px;
+    background-color: rgb(228, 227, 227);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*Scroll-function-css*/
+nav.sticky{
+    background: #1c1c1ef2;
+    height: 70px;
+}
+nav.sticky ul li{
+  line-height: 70px;
+}
+
+nav.sticky .logo{
+    font-size: 30px;
+    line-height: 70px;
+}
+nav.sticky a{
+    padding: 16px 12px 16px 12px;
+}
+/* footer-css */
+footer{
+    background: #00000087;
+    text-align: center;
+    padding: 40px;
+    align-items: center;
+}
+.footer-text{
+    color: white;
+}
+/* main-div-css */
+.main{
+    text-align:center;
+    align-items: center;
+
+}
+.first-section{
+    margin:25px;
+    padding: 10px;
+}
+.face-pic{
+    border:2px solid white;
+    border-radius:209px;
+}
+.name{
+    text-align: center;
+    padding-top:18px;
+}
+.intro{
+    font-size: 35px;
+    color: #ffff;
+    font-weight: bold;
+    font-family: bradley hand ITc;
+    
+}
+.download{
+    height: 20px;
+    width:20px;
+}
+.icons{
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+    overflow:hidden;
+}
+
+.btn{
+    background: none;
+    border:2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffff;
+    font-size: 15px;
+    margin:0px 10px 0px 10px; 
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: #6362627a;
+    
+
+}
+.fix{
+height: 30px;
+width: 30px;
+}
+span,  .paras{
+    color:white;
+}
+.paraser{
+    padding-bottom: 40px;
+}
+span{
+    padding-top: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.paras{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+
+/* RESPONSIVE-task-by-CSS */
+@media screen and (max-width:910px) {
+    nav ul{
+        display: none;
+    }
+    .resume{
+        height: 1012px;
+        width: 667px;
+    }
+    
+}
+
+@media (max-width:762px) {
+  .resume{
+    height: 816px;
+    width: 496px;
+  }
+.face-pic{
+   width: 55%;
+}
+.icons{
+    flex-direction: column;
+    margin-left: 4%;
+}
+.btn{
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width:590px){
+    .resume{
+        height: 678px;
+    width: 400px;
+    }
+    .logo{
+        padding:0 35px;
+    }
+    .face-pic{
+        width: 60%;
+     }
+     .intro{
+         font-size: 40px;
+     }
+     .handle{
+         display: none;
+     }
+}
+
+@media (max-width:490px){
+    .resume{
+       
+            height: 550px;
+            width: 326px;
+    }
+    .face-pic{
+        width: 71%;
+     }
+}
+
+@media (max-width:430px){
+    .resume{
+        height: 466px;
+        width: 261px;
+   
+    }
+    .face-pic{
+        width: 82%;
+     }
+}
+
+@media (max-width:364px){
+    .resume{
+        height: 326px;
+        width: 181px;
+   
+    }
+    .face-pic{
+        width: 90%;
+     }
+}
+
+@media (max-width:280px){
+    .resume{
+        height: 326px;
+        width: 181px;
+        padding: 0px;
+   
+    }
+    .face-pic{
+        width: 99%;
+     }
+}
